@@ -1,1 +1,18 @@
-<p>cars works!</p>
+<div class="container">
+    <div class="row">
+        <div class="card col-md-6 col-lg-4" *ngFor="let car of availableCars">
+            <img class="card-img-top" src="..." alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">{{car.model}}</h5>
+                <p class="card-text">
+                    <li>Tag Number: {{car.tagNumber}}</li>
+                    <li>Tag Number: {{car.carYear}}</li>
+                    <li>Tag Number: {{car.airConditioner}}</li>
+                    <li>Tag Number: {{car.daily}}</li>
+                    <li>Tag Number: {{car.monthly}}</li>
+                    <li>Tag Number: {{car.images}}</li>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
