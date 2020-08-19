@@ -10,6 +10,7 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { CarsComponent } from './cars/cars.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ContactComponent } from './contact/contact.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 
 
@@ -22,7 +23,8 @@ import { ContactComponent } from './contact/contact.component';
     NavigationComponent,
     CarsComponent,
     AboutUsComponent,
-    ContactComponent
+    ContactComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
