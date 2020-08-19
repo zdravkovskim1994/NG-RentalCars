@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { SliderComponent } from './home/slider/home-slider.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { CarsComponent } from './cars/cars.component';
+import { AboutUsComponent } from './about-us/about-us.component';
 
 
 
@@ -18,7 +19,8 @@ import { CarsComponent } from './cars/cars.component';
     HomeComponent,
     SliderComponent,
     NavigationComponent,
-    CarsComponent
+    CarsComponent,
+    AboutUsComponent
   ],
   imports: [
     BrowserModule,
