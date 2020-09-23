@@ -1,0 +1,92 @@
+{
+    "cars":[
+        {
+            "id": 1,
+            "tagNumber": "SK 3341 SS",
+            "model": "Fiat Panda",
+            "carYear": "2017",
+            "airConditioner": 1,
+            "daily": 2500,
+            "monthly": 15000,
+            "transmission": "Manual",
+            "img": "assets/cars/Fiat-Panda.png"
+        },
+        {
+            "id": 2,
+            "tagNumber": "SK 4341 SS",
+            "model": "Opel Corsa",
+            "carYear": "2019",
+            "airConditioner": 1,
+            "daily": 4000,
+            "monthly": 25000,
+            "transmission": "Automatic",
+            "img": "assets/cars/Opel-Corsa.png"
+        },
+        {
+            "id": 3,
+            "tagNumber": "SK 3341 SS",
+            "model": "Peugeot 308HDI",
+            "carYear": "2020",
+            "airConditioner": 0,
+            "daily": 1500,
+            "monthly": 10000,
+            "transmission": "Automatic",
+            "img": "assets/cars/Peugeot-308-HDI.png"
+        },
+        {
+            "id": 4,
+            "tagNumber": "SK 6941 AB",
+            "model": "Renault Clio",
+            "carYear": "2019",
+            "airConditioner": 1,
+            "daily": 5000,
+            "monthly": 29000,
+            "transmission": "Automatic",
+            "img": "assets/cars/Renault-Clio.png"
+        },
+        {
+            "id": 5,
+            "tagNumber": "BT 3341 AB",
+            "model": "Skoda Fabia",
+            "carYear": "2018",
+            "airConditioner": 1,
+            "daily": 5500,
+            "monthly": 28000,
+            "transmission": "Manual",
+            "img": "assets/cars/Skoda-Fabia.png"
+        },
+        {
+            "id": 6,
+            "tagNumber": "BT 3341 AB",
+            "model": "VW Golf",
+            "carYear": "2018",
+            "airConditioner": 1,
+            "daily": 5500,
+            "monthly": 28000,
+            "transmission": "Manual",
+            "img": "assets/cars/VW-Golf.png"
+        },
+        {
+            "id": 7,
+            "tagNumber": "BT 3341 AB",
+            "model": "Nissan Micra",
+            "carYear": "2018",
+            "airConditioner": 1,
+            "daily": 5500,
+            "monthly": 28000,
+            "transmission": "Manual",
+            "img": "assets/cars/Nissan-Micra.png"
+        },
+        {
+            "id": 8,
+            "tagNumber": "BT 3341 AB",
+            "model": "Citroen Berlingo",
+            "carYear": "2018",
+            "airConditioner": 1,
+            "daily": 5500,
+            "monthly": 28000,
+            "transmission": "Manual",
+            "img": "assets/cars/Citroen-Berlingo.png"
+        }
+    ]
+}

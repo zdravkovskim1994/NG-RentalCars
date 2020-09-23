@@ -6,10 +6,12 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { ContactComponent } from './contact/contact.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { FormRegisterComponent } from './form-register/form-register.component';
+import { CarDetailsComponent } from './car-details/car-details.component';
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
   {path: 'cars', component: CarsComponent},
+  {path: 'cars/:id', component: CarDetailsComponent},
   {path: 'about', component: AboutUsComponent},
   {path: 'contact', component: ContactComponent},
   {path: 'register', component: FormRegisterComponent},

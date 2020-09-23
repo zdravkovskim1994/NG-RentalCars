@@ -1,17 +1,21 @@
 <div class="container">
     <div class="row">
-        <div class="card col-md-6 col-lg-4 border-0" *ngFor="let car of availableCars">
-            <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
-            <div class="card-body">
-                <h5 class="card-title">{{car.model}}</h5>
-                <p class="card-text">
-                    <li>Tag Number: {{car.tagNumber}}</li>
-                    <li>Tag Number: {{car.carYear}}</li>
-                    <li>Tag Number: {{car.airConditioner}}</li>
-                    <li>Tag Number: {{car.daily}}</li>
-                    <li>Tag Number: {{car.monthly}}</li>
-                    <li>Tag Number: {{car.images}}</li>
-                </p>
+        <div class="col-md-4" *ngFor="let car of cars">
+            <div class="card-box" [routerLink]="['/cars',car.id]">
+                <img class="card-img-top" [src]="car.img">
+                <div class="card-title">
+                    <h2>{{car.model}}</h2>
+
+                    <i class="fas fa-gas-pump">  Fuel policy</i>
+                        <p>  Full to full</p>
+                    <i class="fas fa-map-marker-alt">  Pick-up location</i>
+                        <p>  Free shuttle service</p>
+                </div>
+                <div class="card-link">
+                    <a [routerLink]="['/cars',car.id]">Learn More
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
