@@ -1,0 +1,12 @@
+.form-group, .form-check-inline{
+    margin-bottom: 1.2rem;
+}
+
+.container {
+    margin-top: 35px;
+
+}
+
+.card {
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+}

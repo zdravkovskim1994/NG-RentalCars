@@ -1,0 +1,72 @@
+<div class="container">
+
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+
+        <div *ngIf="alert" class="alert alert-success" role="alert">
+          <strong>Login successful <i class="fas fa-check"></i></strong>
+        </div>
+
+        <div class="card">
+          <header class="card-header">
+            <h4 class="card-title mt-2">Sign In</h4>
+          </header>
+          <article class="card-body">
+
+            <form #userForm="ngForm" (ngSubmit)="onSubmit(userForm.value, userForm)">
+              <div class="form-group">
+                <label>Email address</label>
+                <input class="form-control"
+                       type="email"
+                       name="email"
+                       ngModel
+                       required
+                       email
+                       #email="ngModel"
+                       [class.is-invalid]="email.invalid && email.touched">
+                <div *ngIf="email.invalid && email.touched">
+                  <small class="text-danger" *ngIf="email.errors.required">Email is required</small>
+                  <small class="text-danger" *ngIf="email.errors.email">Email must be valid email address</small>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label>Password</label>
+                <input class="form-control"
+                       type="password"
+                       name="password"
+                       ngModel
+                       required
+                       #password="ngModel"
+                      [class.is-invalid]="password.invalid && password.touched">
+                <small class="text-danger" [class.d-none]="password.valid || password.untouched">Password is required</small>
+              </div>
+
+              <!-- ngx-cookie-service - NOT NOW -->
+              <div class="checkbox">
+                <label>
+                  <input name="remember" 
+                         type="checkbox" 
+                         value="Remember Me"> Remember Me
+                </label>
+              </div>
+
+              <div class="form-group">
+                <button class="btn btn-primary btn-block mt-3"
+                        type="submit"
+                        [disabled]="userForm.invalid"> Login 
+                </button>
+              </div>
+                    
+            </form>
+          </article>
+
+          <div class="border-top card-body text-center">
+            <a href="" class="btn btn-link">Forgot Your Password?</a>
+          </div>
+        
+    
+        </div>
+      </div>
+    </div>
+</div>

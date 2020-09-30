@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, Validators} from '@angular/forms'
+import { FormBuilder, Validators} from '@angular/forms';
+import { RegistrationService } from '../../services/registration.service';
 
 @Component({
   selector: 'app-form-register',
@@ -34,7 +35,10 @@ export class FormRegisterComponent implements OnInit {
 
   countries = ['Macedonia', 'Russia', 'United States', 'Greece'];
 
-  constructor(private fb: FormBuilder) { }
+  alert: boolean = false;
+
+  constructor(private fb: FormBuilder,
+              private registrationService: RegistrationService ) { }
 
   registrationForm = this.fb.group({
     firstName: ['', Validators.required],
@@ -42,13 +46,19 @@ export class FormRegisterComponent implements OnInit {
     email: ['', [Validators.required, Validators.email]],
     gender: ['male'],
     city: ['', Validators.required],
-    contry: ['Macedonia'],
+    country: ['Macedonia'],
     phone: ['', [Validators.required, Validators.pattern('[0-9]{9}')]],
     password: ['', [Validators.required, Validators.minLength(6), Validators.maxLength(15)]]
   });
 
   onSubmit() {
-    console.log(this.registrationForm.value);
+    this.registrationService.postData(this.registrationForm.value)
+    .subscribe((result)=>{
+      this.alert = true;
+      this.registrationForm.reset();
+      console.log(result);
+    })
+
   }
 
   ngOnInit(): void {

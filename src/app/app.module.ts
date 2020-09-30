@@ -4,17 +4,18 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { FooterComponent } from './footer/footer.component';
-import { HomeComponent } from './home/home.component';
-import { SliderComponent } from './home/slider/home-slider.component';
-import { NavigationComponent } from './navigation/navigation.component';
-import { CarsComponent } from './cars/cars.component';
-import { AboutUsComponent } from './about-us/about-us.component';
-import { ContactComponent } from './contact/contact.component';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { FormRegisterComponent } from './form-register/form-register.component';
-import { CarDetailsComponent } from './car-details/car-details.component';
+import { AppComponent } from './components/app-component/app.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { HomeComponent } from './components/home/home.component';
+import { NavigationComponent } from './components/navigation/navigation.component';
+import { CarsComponent } from './components/cars/cars.component';
+import { AboutUsComponent } from './components/about-us/about-us.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { FormRegisterComponent } from './components/form-register/form-register.component';
+import { CarDetailsComponent } from './components/car-details/car-details.component';
+import { FormLoginComponent } from './components/form-login/form-login.component';
+import { CardComponent } from './components/card/card.component';
 
 
 
@@ -23,7 +24,6 @@ import { CarDetailsComponent } from './car-details/car-details.component';
     AppComponent,
     FooterComponent,
     HomeComponent,
-    SliderComponent,
     NavigationComponent,
     CarsComponent,
     AboutUsComponent,
@@ -31,6 +31,8 @@ import { CarDetailsComponent } from './car-details/car-details.component';
     PageNotFoundComponent,
     FormRegisterComponent,
     CarDetailsComponent,
+    FormLoginComponent,
+    CardComponent,
 
   ],
   imports: [
