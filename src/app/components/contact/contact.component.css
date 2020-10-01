@@ -1,0 +1,23 @@
+.container {
+    background: #FFFFFF;
+    max-width: 960px;
+    max-height: 600px;
+    margin: 5% auto;
+    position: relative;
+    margin-top: 40px;
+  }
+
+
+.form-group, .form-check-inline{
+    margin-bottom: 1.2rem;
+  }
+
+
+.card {
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+}
+
+#textarea {
+    resize: none;
+}
+

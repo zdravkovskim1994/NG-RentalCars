@@ -1,6 +1,82 @@
+<div class="container">
+    <div class="row">
+        <div class="map col-md-6 col-sm-12">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3009.7451819953058!2d21.33174121491518!3d41.03083052598651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x135724fddd8ff967%3A0x6b3ae75ad068443c!2sClock%20Tower!5e0!3m2!1sen!2smk!4v1601418395432!5m2!1sen!2smk" width="100%" height="615px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
 
-
-
-
-
-
+        <div class="col-md-6 col-sm-12">
+            <div class="card">
+                <header class="card-header">
+                    <h2 class="card-title mt-2">Contact Us</h2>
+                    <h4>We are here assist you.</h4>
+                </header>
+                <article class="card-body">
+                    <form #contactForm="ngForm">
+                        <div class="form-group">
+                            <input class="form-control"
+                                type="text"  
+                                placeholder="Your Name" 
+                                name="name" 
+                                ngModel
+                                required
+                                #name="ngModel"
+                                [class.is-invalid]="name.invalid && name.touched">
+                            <small class="text-danger" [class.d-none]="name.valid || name.untouched">Name is required</small>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" 
+                                type="email"
+                                name="email"
+                                placeholder="Your E-mail Adress"
+                                ngModel
+                                required
+                                email
+                                #email="ngModel"
+                                [class.is-invalid]="email.invalid && email.touched">
+                            <div *ngIf="email.invalid && email.touched">
+                                <small class="text-danger" *ngIf="email.errors.required">Email is required</small>
+                                <small class="text-danger" *ngIf="email.errors.email">Email must be valid email address</small>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" 
+                                type="text" 
+                                placeholder="Your Phone Number" 
+                                name="phone" 
+                                ngModel>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control"
+                                    name="text"
+                                    id="textarea" 
+                                    rows="8"
+                                    maxlength="425"
+                                    placeholder="Your Message" 
+                                    name="message" 
+                                    ngModel
+                                    required
+                                    #textarea="ngModel"
+                                    [class.is-invalid]="textarea.invalid && textarea.touched"></textarea>
+                                    <small class="text-danger" [class.d-none]="textarea.valid || textarea.untouched">Message is required</small>
+                            </div>
+                            <div class="form-group">
+                                <button class="btn btn-primary btn-block mt-3"
+                                        type="submit"
+                                        [disabled]="contactForm.invalid"> Submit 
+                                </button>
+                            </div>
+                    </form>
+                </article>
+            </div>
+           
+            
+        
+        </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
