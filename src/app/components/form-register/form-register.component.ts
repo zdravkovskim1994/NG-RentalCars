@@ -53,11 +53,11 @@ export class FormRegisterComponent implements OnInit {
 
   onSubmit() {
     this.registrationService.postData(this.registrationForm.value)
-    .subscribe((result)=>{
-      this.alert = true;
-      this.registrationForm.reset();
-      console.log(result);
-    })
+      .subscribe((result)=>{
+        this.alert = true;
+        this.registrationForm.reset();
+        console.log(result);
+      })
 
   }
 

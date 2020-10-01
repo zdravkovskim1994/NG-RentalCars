@@ -11,7 +11,7 @@
                     <h4>We are here assist you.</h4>
                 </header>
                 <article class="card-body">
-                    <form #contactForm="ngForm">
+                    <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm.value)">
                         <div class="form-group">
                             <input class="form-control"
                                 type="text"  

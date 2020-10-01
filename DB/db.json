@@ -89,6 +89,7 @@
       "img": "assets/cars/Citroen-Berlingo.png"
     }
   ],
+  
   "users": [
     {
       "id": 1,
@@ -144,6 +145,15 @@
       "phone": "075824333",
       "password": "asfasfasfasfasf",
       "id": 7
+    }
+  ],
+
+  "contactMessage": [
+    {
+      "name": "Mario",
+      "email": "zdravkovskim@hotmail.com",
+      "phone": "075 824 333",
+      "message": "Test message!"
     }
   ]
 }
