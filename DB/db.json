@@ -8,6 +8,9 @@
       "airConditioner": 1,
       "daily": 2500,
       "monthly": 15000,
+      "seats": "4",
+      "bag": "1",
+      "dors": "4",
       "transmission": "Manual",
       "img": "assets/cars/Fiat-Panda.png"
     },
@@ -19,7 +22,10 @@
       "airConditioner": 1,
       "daily": 4000,
       "monthly": 25000,
-      "transmission": "Automatic",
+      "seats": "5",
+      "bag": "1",
+      "dors": "4",
+      "transmission": "Manual",
       "img": "assets/cars/Opel-Corsa.png"
     },
     {
@@ -30,7 +36,10 @@
       "airConditioner": 0,
       "daily": 1500,
       "monthly": 10000,
-      "transmission": "Automatic",
+      "seats": "5",
+      "bag": "3",
+      "dors": "5",
+      "transmission": "Manual",
       "img": "assets/cars/Peugeot-308-HDI.png"
     },
     {
@@ -41,7 +50,10 @@
       "airConditioner": 1,
       "daily": 5000,
       "monthly": 29000,
-      "transmission": "Automatic",
+      "seats": "5",
+      "bag": "2",
+      "dors": "4",
+      "transmission": "Manual",
       "img": "assets/cars/Renault-Clio.png"
     },
     {
@@ -52,6 +64,9 @@
       "airConditioner": 1,
       "daily": 5500,
       "monthly": 28000,
+      "seats": "5",
+      "bag": "2",
+      "dors": "5",
       "transmission": "Manual",
       "img": "assets/cars/Skoda-Fabia.png"
     },
@@ -63,6 +78,9 @@
       "airConditioner": 1,
       "daily": 5500,
       "monthly": 28000,
+      "seats": "5",
+      "bag": "3",
+      "dors": "5",
       "transmission": "Manual",
       "img": "assets/cars/VW-Golf.png"
     },
@@ -74,6 +92,9 @@
       "airConditioner": 1,
       "daily": 5500,
       "monthly": 28000,
+      "seats": "5",
+      "bag": "2",
+      "dors": "2",
       "transmission": "Manual",
       "img": "assets/cars/Nissan-Micra.png"
     },
@@ -85,11 +106,41 @@
       "airConditioner": 1,
       "daily": 5500,
       "monthly": 28000,
-      "transmission": "Manual",
+      "seats": "5",
+      "bag": "2",
+      "dors": "4",
+      "transmission": "Automatic",
       "img": "assets/cars/Citroen-Berlingo.png"
+    },
+    {
+      "id": 9,
+      "tagNumber": "BT 2562 AB",
+      "model": "Ford-Galaxy",
+      "carYear": "2020",
+      "airConditioner": 1,
+      "daily": 5500,
+      "monthly": 28000,
+      "seats": "7",
+      "bag": "2",
+      "dors": "5",
+      "transmission": "Manual",
+      "img": "assets/cars/Ford-Galaxy.png"
+    },
+    {
+      "id": 10,
+      "tagNumber": "SK 2562 AB",
+      "model": "VW Touran",
+      "carYear": "2020",
+      "airConditioner": 1,
+      "daily": 5500,
+      "monthly": 28000,
+      "seats": "7",
+      "bag": "1",
+      "dors": "4",
+      "transmission": "Manual",
+      "img": "assets/cars/VW-Touran.png"
     }
   ],
-  
   "users": [
     {
       "id": 1,
@@ -112,48 +163,29 @@
       "phone": "124124124",
       "password": "1245124512",
       "id": 2
-    },
-    {
-      "firstName": "asfasf",
-      "lastName": "asasfas",
-      "email": "asfasf@dgsghag",
-      "gender": "male",
-      "city": "asgsdag",
-      "contry": "Macedonia",
-      "phone": "075815620",
-      "password": "asgfqwegf23",
-      "id": 4
-    },
-    {
-      "firstName": "asfas",
-      "lastName": "fasf",
-      "email": "asf@wegtaweg",
-      "gender": "male",
-      "city": "asgfsaf",
-      "contry": "Macedonia",
-      "phone": "075824333",
-      "password": "12512412",
-      "id": 6
-    },
-    {
-      "firstName": "asf",
-      "lastName": "asfsaf",
-      "email": "asfasf@gmail.com",
-      "gender": "male",
-      "city": "safasf",
-      "contry": "Macedonia",
-      "phone": "075824333",
-      "password": "asfasfasfasfasf",
-      "id": 7
     }
   ],
-
   "contactMessage": [
     {
+      "id": 1,
       "name": "Mario",
       "email": "zdravkovskim@hotmail.com",
       "phone": "075 824 333",
       "message": "Test message!"
+    },
+    {
+      "name": "Test",
+      "email": "zdravkovskim@hotmail.com",
+      "phone": "075555333",
+      "message": "Test!",
+      "id": 2
+    },
+    {
+      "name": "Test2",
+      "email": "asfasf@hotmail.com",
+      "phone": "",
+      "message": "testt",
+      "id": 3
     }
   ]
 }

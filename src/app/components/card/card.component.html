@@ -1,16 +1,9 @@
-<div class="card-box" [routerLink]="['/cars',car.id]">
-    <img class="card-img-top" [src]="car.img">
-    <div class="card-title">
-        <h2>{{car.model1}}</h2>
-
-        <i class="fas fa-gas-pump">  Fuel policy</i>
-            <p>  Full to full</p>
-        <i class="fas fa-map-marker-alt">  Pick-up location</i>
-            <p>  Free shuttle service</p>
-    </div>
-    <div class="card-link">
-        <a [routerLink]="['/cars',car.id]">Learn More
-            <i class="fa fa-angle-right"></i>
-        </a>
-    </div>
+<img class="card-img-top" [src]="car.img">
+<div class="card-title">
+    <h2>{{car.model}}</h2>
+    
+    <i class="fas fa-gas-pump">  Fuel policy</i>
+        <p>  Full to full</p>
+    <i class="fas fa-map-marker-alt">  Pick-up location</i>
+        <p>  Free shuttle service</p>
 </div>

@@ -18,7 +18,6 @@ import { FormLoginComponent } from './components/form-login/form-login.component
 import { CardComponent } from './components/card/card.component';
 
 
-
 @NgModule({
   declarations: [
     AppComponent,

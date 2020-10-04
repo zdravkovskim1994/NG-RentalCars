@@ -4,14 +4,8 @@ body {
 }
 
 .container {
-    margin-top: 50px;
-}
-
-.card-img-top {
-    width: 200px;
-    height: 113px;
-    display: block;
-    margin: auto;
+    margin-top: 35px;
+    margin-bottom: 80px;
 }
 
 .card-box {
@@ -47,23 +41,6 @@ body {
     top: 0;
 }
 
-.card-title h2 {
-    margin: 0;
-    padding-top: 5%;
-    color: #2196F3;
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
-    font-size: 24px;
-    line-height: 1;
-    margin-bottom: 30px;
-}
-
-.card-title p {
-    margin: 0;
-    margin-bottom: 10px;
-    font-size: 16px;
-}
-
 .card-link a {
     text-decoration: none;
     font-family: 'Oswald', sans-serif;
@@ -76,5 +53,3 @@ body {
     color: blue;
     font-size: 15.3px;
 }
-
-

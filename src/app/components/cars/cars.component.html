@@ -2,15 +2,9 @@
     <div class="row">
         <div class="col-md-4" *ngFor="let car of cars">
             <div class="card-box" [routerLink]="['/cars',car.id]">
-                <img class="card-img-top" [src]="car.img">
-                <div class="card-title">
-                    <h2>{{car.model}}</h2>
-
-                    <i class="fas fa-gas-pump">  Fuel policy</i>
-                        <p>  Full to full</p>
-                    <i class="fas fa-map-marker-alt">  Pick-up location</i>
-                        <p>  Free shuttle service</p>
-                </div>
+                
+                <!-- share card - here! -->
+                <app-card [car]="car"></app-card>
                 <div class="card-link">
                     <a [routerLink]="['/cars',car.id]">Learn More
                         <i class="fa fa-angle-right"></i>

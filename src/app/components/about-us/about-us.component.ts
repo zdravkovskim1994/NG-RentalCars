@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutUsComponent implements OnInit {
 
+  vehicles: number = 100;
+  phone: string = '(+389) 47 333 555';
+
   constructor() { }
 
   ngOnInit(): void {

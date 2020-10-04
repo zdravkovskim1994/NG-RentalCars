@@ -4,10 +4,9 @@ import { HttpClient } from '@angular/common/http';
 @Injectable({
   providedIn: 'root'
 })
-export class RegistrationService {
+export class ContactService {
 
-  private _url: string = "http://localhost:3000/users";
-
+  _url: string = "http://localhost:3000/contactMessage";
   constructor(private http: HttpClient) { }
 
   postData(data: any) {
