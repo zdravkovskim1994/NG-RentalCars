@@ -1,6 +1,18 @@
 <div class="container">
     <div class="row">
-        <div class="col-md-4" *ngFor="let car of cars">
+        
+        <!-- Search filter -->
+        <div class="col-md-12 d-flex justify-content-center">
+            <div class="form-group">
+                <input class="form-control input-lg" 
+                       type="text"  
+                       placeholder="Search.."
+                       [(ngModel)]="searchTerm"
+                       style="width: 350px; margin-bottom: 20px;">
+            </div>
+        </div>
+        
+        <div class="col-md-4" *ngFor="let car of cars | carFilter:searchTerm">
             <div class="card-box" [routerLink]="['/cars',car.id]">
                 
                 <!-- share card - here! -->

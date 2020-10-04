@@ -163,6 +163,17 @@
       "phone": "124124124",
       "password": "1245124512",
       "id": 2
+    },
+    {
+      "firstName": "Mario",
+      "lastName": "Zdravkovski",
+      "email": "zdravkovskim@hotmail.com",
+      "gender": "male",
+      "city": "Bitola",
+      "country": "Macedonia",
+      "phone": "075824333",
+      "password": "075824333",
+      "id": 3
     }
   ],
   "contactMessage": [
@@ -186,6 +197,13 @@
       "phone": "",
       "message": "testt",
       "id": 3
+    },
+    {
+      "name": "Mario",
+      "email": "zdravkovskim@hotmail.com",
+      "phone": "075824333",
+      "message": "Test!\n",
+      "id": 4
     }
   ]
 }

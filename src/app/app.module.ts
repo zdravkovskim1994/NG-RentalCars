@@ -16,6 +16,7 @@ import { FormRegisterComponent } from './components/form-register/form-register.
 import { CarDetailsComponent } from './components/car-details/car-details.component';
 import { FormLoginComponent } from './components/form-login/form-login.component';
 import { CardComponent } from './components/card/card.component';
+import { CarFilterPipe } from './pipes/car-filter.pipe';
 
 
 @NgModule({
@@ -32,6 +33,7 @@ import { CardComponent } from './components/card/card.component';
     CarDetailsComponent,
     FormLoginComponent,
     CardComponent,
+    CarFilterPipe,
 
   ],
   imports: [

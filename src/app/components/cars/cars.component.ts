@@ -9,6 +9,7 @@ import { CarsService } from '../../services/cars.service';
 export class CarsComponent implements OnInit {
 
   cars:any = [];
+  searchTerm: string;
 
   constructor(private carService: CarsService) { }
 
