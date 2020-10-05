@@ -15,8 +15,9 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 import { FormRegisterComponent } from './components/form-register/form-register.component';
 import { CarDetailsComponent } from './components/car-details/car-details.component';
 import { FormLoginComponent } from './components/form-login/form-login.component';
-import { CardComponent } from './components/card/card.component';
+import { CardComponent } from './components/share-components/card/card.component';
 import { CarFilterPipe } from './pipes/car-filter.pipe';
+import { CardTravelComponent } from './components/share-components/card-travel/card-travel.component';
 
 
 @NgModule({
@@ -34,6 +35,7 @@ import { CarFilterPipe } from './pipes/car-filter.pipe';
     FormLoginComponent,
     CardComponent,
     CarFilterPipe,
+    CardTravelComponent,
 
   ],
   imports: [
