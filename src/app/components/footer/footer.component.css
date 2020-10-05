@@ -16,6 +16,7 @@ footer p {
 .bottom_border { 
     border-bottom: 1px solid #323f45;
     padding-bottom: 20px;
+    padding-top: 45px;
 }
 
 
@@ -70,4 +71,8 @@ footer p {
 .social li a:hover{ 
     color:#fff; 
     text-decoration: none;
+}
+
+.copyright {
+    padding-bottom: 8px !important;
 }

@@ -9,7 +9,7 @@ export class CarDetailsGuard implements CanActivate {
 
   //true for access to car-details and will change 
     //(navigation)nav-item to (logout)
-  public isLoggedIn: boolean = true;
+  public isLoggedIn: boolean = false;
 
   constructor(private router: Router){}
 

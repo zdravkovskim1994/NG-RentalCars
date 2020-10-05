@@ -7,8 +7,8 @@
                 <app-card [car]="car"></app-card>
             </div>
         </div>
-        <div class="col-md-4">
-            <div class="card-box shadow">
+        <div class="col-md-3">
+            <div class="card-box-details">
                 <ul>
                     <li class="text-secondary">Tag number
                         <h5 class="text-dark">{{car.tagNumber}}</h5>
@@ -16,12 +16,21 @@
                     <li class="text-secondary">Car Year
                         <h5 class="text-dark">{{car.carYear}}</h5>
                     </li>
-                    <li class="text-secondary">Price monthly:
+                    <li class="text-secondary">Monthly price:
                         <h5 class="text-dark">{{car.monthly | currency:'MKD'}}</h5>
+                    </li>
+                    <li class="text-secondary">Monthly price:
+                        <h5 class="text-dark">{{car.daily | currency:'MKD'}}</h5>
                     </li>
                     <li class="text-secondary">Seats
                         <h5 class="text-dark">{{car.seats}}</h5>
                     </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card-box-details">
+                <ul>
                     <li class="text-secondary">Bag
                         <h5 class="text-dark">{{car.bag}}</h5>
                     </li>
@@ -33,8 +42,7 @@
                     </li>
                 </ul>
             </div>
-        </div>
-        <div class="col-md-12 d-flex justify-content-center mt-4">
+        <div class="d-flex justify-content-center mt-4">
             <div class="form-group">
                 <button class="btn btn-lg btn-primary btn-block"
                         type="submit"> Book now

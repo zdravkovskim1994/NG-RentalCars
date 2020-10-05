@@ -4,7 +4,7 @@
       "id": 1,
       "tagNumber": "SK 3341 SS",
       "model": "Fiat Panda",
-      "carYear": "2017",
+      "carYear": "2019",
       "airConditioner": 1,
       "daily": 2500,
       "monthly": 15000,
@@ -102,7 +102,7 @@
       "id": 8,
       "tagNumber": "BT 3341 AB",
       "model": "Citroen Berlingo",
-      "carYear": "2018",
+      "carYear": "2019",
       "airConditioner": 1,
       "daily": 5500,
       "monthly": 28000,
@@ -154,17 +154,6 @@
       "password": "asd"
     },
     {
-      "firstName": "asfasf",
-      "lastName": "asfasf",
-      "email": "asfasf@gmail.com",
-      "gender": "male",
-      "city": "asfasf",
-      "contry": "Macedonia",
-      "phone": "124124124",
-      "password": "1245124512",
-      "id": 2
-    },
-    {
       "firstName": "Mario",
       "lastName": "Zdravkovski",
       "email": "zdravkovskim@hotmail.com",
@@ -197,13 +186,6 @@
       "phone": "",
       "message": "testt",
       "id": 3
-    },
-    {
-      "name": "Mario",
-      "email": "zdravkovskim@hotmail.com",
-      "phone": "075824333",
-      "message": "Test!\n",
-      "id": 4
     }
   ]
 }
