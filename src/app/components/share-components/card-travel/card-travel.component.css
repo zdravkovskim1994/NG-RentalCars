@@ -3,6 +3,9 @@
     line-height: 24px;
     font-weight: 700;
     color: #585858;
+    height: 80px;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .card {
