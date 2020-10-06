@@ -55,7 +55,9 @@
                 <a class="nav-link" *ngIf="!carDetailsGuard.isLoggedIn" routerLink="/login">
                     <span><i class="fas fa-sign-in-alt"></i></span> 
                     Login</a>
-                <a class="nav-link" *ngIf="carDetailsGuard.isLoggedIn"> Logout</a>     
+                <a class="nav-link" *ngIf="carDetailsGuard.isLoggedIn">
+                    <span><i class="fas fa-sign-out-alt"></i></span>
+                    Logout</a>     
             </li>
         </ul>
       </form>
